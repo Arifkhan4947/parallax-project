@@ -1,0 +1,105 @@
+/* CSS code starts here */
+
+/* Setting default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the wrapper element */
+#wrapper {
+    height: 100vh; /* Setting height to fill the viewport */
+    overflow-x: hidden; /* Hiding horizontal overflow */
+    overflow-y: auto; /* Allowing vertical scrolling */
+    perspective: 10px; /* Adding a 3D perspective */
+}
+
+/* Styling the container element */
+.container {
+    position: relative; /* Positioning relative to its normal position */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    height: 100%; /* Filling the height of the wrapper */
+    transform-style: preserve-3d; /* Preserving 3D transformations */
+    z-index: -1; /* Setting a lower z-index */
+}
+
+/* Styling the background and foreground images */
+.background, .foreground {
+    position: absolute; /* Positioning absolutely within the container */
+    height: 100%; /* Filling the height of the container */
+    width: 100%; /* Filling the width of the container */
+    z-index: -1; /* Setting a lower z-index */
+}
+
+/* Styling the background image */
+.background {
+    transform: translateZ(-40px) scale(5); /* Applying a 3D transformation */
+}
+
+/* Styling the foreground image */
+.foreground {
+    transform: translateZ(-20px) scale(3); /* Applying a 3D transformation */
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    letter-spacing: 4px;
+
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    /* text-align: center;
+    justify-content: center;
+    padding: 200px; */
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
